@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-PT">
+<head>
+	<title>erreeme</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+	<meta http-equiv="Content-Style-Type" CONTENT="text/css">
+	<meta http-equiv="Content-Script-Type" CONTENT="text/javascript">
+	<meta name="keywords" content="erreeme, tapetes, tapeçarias, rugs, custom rugs">
+	<meta name="robots" content="all">
+	<link rel="shortcut icon" href="img/logos/erreeme.ico" type="image/x-icon">
+	<!-- IMPORT STYLESHEETS																 -->
+	<!-- media="all,print,handheld"                                                      -->
+	<link rel="stylesheet" type="text/css" media="all" href="erreeme.css">
+	<link rel="stylesheet" type="text/css" media="all" href="menu.css">
+	<link rel="stylesheet" type="text/css" media="all" href="bannerslideshow.css">
+	<!-- IMPORT JAVASCRIPT																 -->
+	<script src="jquery-1.7.1.min.js"></script>
+	<!-- <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script> -->
+	<script src="menu.js"></script>
+	<script src="bannerslideshow.novidades.js.php"></script>
+	<script src="util.js"></script>
+	<!-- Google Chrome Applications TAB Specific                                          -->
+	<!-- This group of meta-tags defines the way shortcuts for the URL are Named          -->
+	<meta name="application-name" content="RM Custom Rugs">
+	<meta name="description" content="Custom Rugs">
+	<link rel="icon" href="img/logos/erreeme32x32.png" sizes="32x32">
+	<!-- application-url defines the URL that is opened when the link/shortcut is pressed -->
+	<!-- <meta name="application-url" content="http://www.erreeme.com.pt"/>               -->
+	<!--     END of Shortcut Definition                                                   -->
+  
+  <!-- Google Analytics -->
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30722745-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+  
+</head>
+<body>
+<div class="mainframe" lang="{LANGUAGE}"> <!-- BEGIN class="main>" -->
+	<div class="center coleccao">
+		<div class="header">
+			<div class="logo">
+				<!-- <img alt="logotipo erreeme" src="img/logotipo.png"> -->
+			</div>
+			<div class="menu">
+				   <ul> 
+						<li id="opthome"> <a>{LINGUA}</a>
+						</li>
+						<li id="optempresa"> <a>{EMPRESA}</a>
+						</li>
+						<li id="optcoleccao"> <a>{COLECCAO}</a>
+						</li>
+            <li id="optnovidades"> <a class="selected">{NOVIDADES}</a>
+						</li>            
+						<li id="optambientes"> <a>{AMBIENTES}</a>
+						</li>
+						<li id="optcontactos"> <a>{CONTACTOS}</a>
+						</li>
+						<li id="optparcerias"> <a>{PARCERIAS}</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="centerbody">
+			<div class="amostras">
+				<div class="amostras1">
+					<img src="img/amostras/Amostra.jpg"/>
+					<img src="img/amostras/AmostraIV.jpg"/>
+					<img src="img/amostras/AmostraXII.jpg"/>
+					<img src="img/amostras/K GRANITO.jpg"/>
+					<img src="img/amostras/MOHAIR 28 GRANNAT.jpg"/>
+					<img src="img/amostras/SIDNEY IVORY.jpg"/>
+					<img src="img/amostras/VERMELHO.jpg"/>
+				</div>
+				<div class="amostraszoom">
+					<img src=""/>
+				</div>			
+			</div>
+			<div class="topblock">
+				<div class="leftside">
+					<img id="up" src="img/round_arrow_button_up.png"/>
+					<img id="down" src="img/round_arrow_button_down.png"/>
+					<div class="Vbanner">
+						<!-- BEGIN BLOCK_COLECCAOVBANNER -->
+						<img bannerslide="{ELEM}" src="{PATH}"/>
+						<!-- END BLOCK_COLECCAOVBANNER -->
+<!--
+						<img bannerslide="1" src="img/coleccao/natura.png"/>
+						<img bannerslide="2" src="img/coleccao/chic.png"/>
+						<img bannerslide="3" src="img/coleccao/silklin.png"/>
+						<img bannerslide="4" src="img/coleccao/velvet.png"/>
+						<img bannerslide="5" src="img/coleccao/lucca.png"/>
+						<img bannerslide="6" src="img/coleccao/mood.png"/>
+						<img bannerslide="7" src="img/coleccao/cool.png"/>
+						<img bannerslide="8" src="img/coleccao/lin.png"/>
+						<img bannerslide="9" src="img/coleccao/elite.png"/>
+-->
+					</div>
+				</div>
+				<div class="rightside">
+					<div class="textblock">
+						{RIGHTSIDETEXTBLOCK}
+					</div>
+					<div class="qualidades">
+						<!-- BEGIN BLOCK_COLECCAOQUALID -->
+						<img bannerslide="{ELEM}" src="{PATH}"/>
+						<!-- END BLOCK_COLECCAOQUALID -->
+<!--					
+						<img bannerslide="1" src="img/coleccao/natura.png"/>
+						<img bannerslide="2" src="img/coleccao/chic.png"/>
+						<img bannerslide="3" src="img/coleccao/silklin.png"/>
+						<img bannerslide="4" src="img/coleccao/velvet.png"/>
+						<img bannerslide="5" src="img/coleccao/lucca.png"/>
+						<img bannerslide="6" src="img/coleccao/mood.png"/>
+						<img bannerslide="7" src="img/coleccao/cool.png"/>
+						<img bannerslide="8" src="img/coleccao/lin.png"/>
+						<img bannerslide="9" src="img/coleccao/elite.png"/>
+-->
+					</div>
+				</div>
+				<div class="rightside2">
+					<div class="bannerswindow">
+						<div id="next_left" class="arrows"></div>
+						<div id="next_right" class="arrows"></div>	
+						<img pos=0 id="bannerslideshow">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

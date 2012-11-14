@@ -1,0 +1,65 @@
+		.main .bannerswindow {
+			width: 100%;
+			height: 664px;
+			overflow: hidden; /* Esconde o resto do objectos. Comentar para ver o efeito. */
+			margin-bottom: 4px;
+			margin-top: 20px;
+		}
+		/* Cada um dos blocos que se querem passar na janela */
+		.main .bannerswindow img {
+			width: 1024px;
+			height: 664px;		
+			display: inline-block;
+		}
+		.ambientes .bannerswindow {
+			width: 940px;
+			height: 570px;
+			overflow: hidden; /* Esconde o resto do objectos. Comentar para ver o efeito. */
+			margin-bottom: 4px;
+			margin-top: 20px;
+		}
+		.ambientes .bannerswindow img {
+			width: 940px;
+			height: 570px;		
+			display: inline-block;
+		}		
+		.coleccao .bannerswindow {
+			display: none;
+			width: 840px;
+			height: 570px;
+			overflow: hidden; /* Esconde o resto do objectos. Comentar para ver o efeito. */
+			margin-bottom: 4px;
+			margin-top: 60px;
+		}
+		.coleccao .bannerswindow img {
+			width: 840px;
+			height: 570px;		
+			display: inline-block;
+		}		
+		/* Cada um dos blocos que se querem passar na janela */
+		.arrows {
+			cursor: pointer;
+			/* top: 142px; Defined by the javascript to center automatically */
+			opacity: .5;
+		}
+		#next_left {
+			background: url(img/banner_arrow_left_mouseover.png);
+			position: absolute;
+			//z-index: 11;
+			/* background-color: lightgray; */
+			/* border-radius: 20px; */
+			width: 24px;
+			height: 48px;
+			display: inline-block;
+		}
+		#next_right {
+			background: url(img/banner_arrow_right_mouseover.png);
+			position: absolute;
+			//margin-left: 995px; //Defined dinamicaly by javascript
+			//z-index: 11;
+			/* background-color: lightgray; */
+			/* border-radius: 20px; */
+			width: 24px;
+			height: 48px;
+			display: inline-block;
+		}		

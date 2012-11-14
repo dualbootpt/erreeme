@@ -1,0 +1,13 @@
+
+<script type="text/javascript">
+  function logOut() {
+    document.cookie = 'adminMode=""; expires=Thu, 01-Jan-70 00:00:01GMT;';
+    console.log(document.cookie);
+    document.location="auth.php";
+    return false;
+  }
+</script>
+
+<br/>
+<input name="logout" type="submit" value="logout" onclick="logOut()">
+<br/>

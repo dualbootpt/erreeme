@@ -1,0 +1,20 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="2">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1" startPos="2881" endPos="2881" selMode="0" lang="Javascript" encoding="-1" filename="F:\DEV\erreeme\bannerslideshow.coleccao.js" />
+            <File firstVisibleLine="1" xOffset="0" scrollWidth="10024" startPos="927" endPos="927" selMode="0" lang="Javascript" encoding="-1" filename="F:\DEV\erreeme\bannerslideshow.ambientes.js" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="592" startPos="1007" endPos="1007" selMode="0" lang="SQL" encoding="-1" filename="F:\DEV\erreeme\insert bannerslideshows.sql" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="10024" startPos="484" endPos="484" selMode="0" lang="SQL" encoding="-1" filename="F:\DEV\erreeme\insert coleccoes.sql" />
+            <File firstVisibleLine="48" xOffset="0" scrollWidth="616" startPos="1126" endPos="1126" selMode="0" lang="CSS" encoding="-1" filename="F:\DEV\erreeme\erreeme.css" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1016" startPos="883" endPos="883" selMode="0" lang="PHP" encoding="-1" filename="F:\DEV\erreeme\conteudo.php" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="864" startPos="765" endPos="765" selMode="0" lang="HTML" encoding="-1" filename="F:\DEV\erreeme\erreeme.coleccao.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="864" startPos="486" endPos="486" selMode="0" lang="HTML" encoding="-1" filename="F:\DEV\erreeme\erreeme.empresa.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="776" startPos="304" endPos="304" selMode="0" lang="HTML" encoding="-1" filename="F:\DEV\erreeme\erreeme.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="776" startPos="1148" endPos="1148" selMode="0" lang="HTML" encoding="-1" filename="F:\DEV\erreeme\erreeme.ambientes.html" />
+            <File firstVisibleLine="37" xOffset="0" scrollWidth="1104" startPos="2937" endPos="2937" selMode="0" lang="HTML" encoding="-1" filename="F:\DEV\erreeme\erreeme.contactos.html" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="976" startPos="1900" endPos="1900" selMode="0" lang="HTML" encoding="-1" filename="F:\DEV\erreeme\erreeme.parcerias.html" />
+            <File firstVisibleLine="11" xOffset="0" scrollWidth="1" startPos="1897" endPos="1897" selMode="0" lang="PHP" encoding="-1" filename="F:\DEV\erreeme\erreeme.registar.php" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      
+
+<url>
+  <loc>http://www.erreeme.pt/erreeme.html</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.empresa.php?lang=langpt</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.contactos.php?lang=langpt</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.parcerias.php?lang=langpt</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.empresa.php?lang=langit</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.contactos.php?lang=langit</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.parcerias.php?lang=langit</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.empresa.php?lang=langen</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.contactos.php?lang=langen</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.parcerias.php?lang=langen</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.empresa.php?lang=langes</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.contactos.php?lang=langes</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.parcerias.php?lang=langes</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.empresa.php?lang=langde</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.contactos.php?lang=langde</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.parcerias.php?lang=langde</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.empresa.php?lang=langfr</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.contactos.php?lang=langfr</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://www.erreeme.pt/erreeme.parcerias.php?lang=langfr</loc>
+  <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+
+</urlset>

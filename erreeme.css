@@ -1,0 +1,262 @@
+body {
+ //background-color: #354047;
+ //background-color: #202020;
+ background-color: #121316;
+ //background-color: black;
+ //background-image: url(img/logos/logotipo_erreeme_transparente.png);
+ //background-size: 200px;
+ //background-repeat:none;
+ color: white;
+}
+.center {
+ margin-left: auto;
+ margin-right: auto;
+ width: 1024px;
+}
+.header{
+ min-height: 130px;
+ background-image: url(img/background_cab.png);
+}
+.main .header {
+background-image: none;
+}
+.logo, .lista {
+ display: block;
+}
+.main .logo {
+ width: 550px;
+}
+.topblock {
+ min-height: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 4px;
+ float: left;
+}
+.contactos .topblock {
+ min-height: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 40px;
+ float: left;
+}
+.rightside, .leftside {
+ display: inline-block;
+}
+.empresa .rightside, .empresa .leftside {
+ width: 509px;
+ height: 315px;
+ margin-top: 50px;
+}
+.coleccao .leftside  {
+ display: none;
+ width: 180px;
+ height: 570px;
+}
+.coleccao .rightside {
+ width: 1024px;
+}
+.coleccao .rightside2 {
+ width: 700px;
+ display: inline-block;
+}
+.ambientes .leftside  {
+ width: 80px;
+}
+.ambientes .rightside {
+ width: 940px;
+}
+.contactos .leftside {
+ width: 350px;
+ margin-left: 100px;
+}
+.contactos .rightside {
+ width: 550px;
+ height: 325px;
+}
+.contactos .rightside img {
+ opacity: .5;
+}
+.textblock {
+ margin-left: 30px;
+ color: lightgray;
+ text-align: justify;
+ font-family: 'century gothic';
+ font-size: .9em;
+}
+.parcerias .textblock {
+ margin-top: 100px;
+ margin-left: 100px;
+ color: lightgray;
+ text-align: justify;
+ font-family: 'century gothic';
+}
+.coleccao .textblock {
+ width: 995px;
+ //margin-top: 50px;
+ color: lightgray;
+ text-align: center;
+ font-family: 'century gothic';
+}
+.coleccao .qualidades {
+ width: 820px;
+ margin-top: 60px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.coleccao .qualidades img {
+ width: 200px;
+ cursor: pointer;
+ margin-bottom: 50px;
+}
+.ambientes .textblock {
+ color: lightgray;
+ text-align: center;
+ font-family: 'century gothic';
+ font-size: .9em;
+}
+.coleccao .amostras {
+ display: none;
+ float:right;
+ overflow: hidden;
+}
+.coleccao .amostras img{
+ width: 50px;
+}
+.coleccao .amostraszoom img{
+ width: 130px;
+ border: solid;
+ border-width: 4px;
+ border-color: #978a7c;
+ display: inline-block;
+}
+.coleccao .amostraszoom{
+ position: absolute;
+ top: 130px;
+ right: 17%;
+ display: none;
+}
+.languageselect {
+ width: 550px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+.languageselect .logo {
+width: 440px;
+ margin-top: 130px;
+ margin-bottom: 30px;
+}
+.lista {
+ margin-left: auto;
+ margin-right: auto;
+ font-family: 'century gothic';
+ font-size: .8em;
+ font-variant: small-caps;
+ font-style: normal;
+ text-align: center;
+ cursor: pointer;
+ //margin-top: -30px;
+}
+#selzoom {
+ position: absolute;
+ color: white;
+ margin-top: 98px;
+ margin-left: 754px;
+ font-size: 9px;
+ font-family: 'century gothic';
+ cursor: pointer;
+}
+.zoom {
+ display: none;
+ margin-top: 20px;
+}
+.zoom .regressar {
+ color: white;
+ margin-top: 40px;
+ margin-left: 978px;
+ font-size: 12px;
+ font-family: 'century gothic';
+ cursor: pointer;
+}
+.zoom img {
+ width: 100%;
+ //border: inset #978a7c 20px;
+ border: solid #978a7c 10px;
+}
+img.separador {
+ width: 170px;
+}
+a {
+ text-decoration: none;
+ //color: #978a7c;
+ color: #ffac7a;
+}
+dl {
+ -webkit-margin-before: .2em;
+}
+.Vbanner {
+ height: 569px;
+ //overflow-y: scroll;
+ overflow: hidden;
+}
+.Vbanner img {
+ width: 100%;
+}
+.coleccao #up, .coleccao #down {
+ height: 32px;
+ width: 32px;
+ display: inline-block;
+ opacity: .4;
+}
+.coleccao #up {
+ position: absolute;
+ top: 160px;
+ //left: 205px;
+}
+.coleccao #down {
+ position: absolute;
+ top: 780px;
+ //left: 205px;
+}
+erreeme {
+ color:#ffac7a;
+ font-family: Impact, Serif;
+ font-size: .8em;
+ //font-weight: bold;
+}
+.registo {
+ line-height: 2em;
+ color: lightgray;
+ margin-left: 30px;
+ font-family: 'century gothic';
+ font-size: .9em;
+}
+.registo input {
+ background-color: lightgray;
+ color: black;
+ margin-left: 5px;
+ width: 250px;
+}
+.registo .button {
+ float: right;
+ margin-right: 10px;
+ width: 255px;
+ background-color: darkGray;
+ color: white;
+ font-weight: bold;
+}
+#mensagem {
+ color: #ffac7a;
+ margin-left: 30px;
+ float: right;
+ margin-right: 30px;
+ min-height: 2em;
+}
+.confirmacao {
+ line-height: 2em;
+ color: lightgray;
+ margin-top: 60px;
+ font-family: 'century gothic';
+ font-size: .9em;
+ text-align: center;
+}
