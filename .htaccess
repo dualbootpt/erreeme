@@ -1,0 +1,11 @@
+DirectoryIndex erreeme.html index.php index.htm index.html
+Options +All -Indexes
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+
+RewriteEngine on
+
+RewriteRule ^(admin)$ auth.php [L]
+
+# no-cache for php pages
+RewriteRule (.*\.php)/?$ $1 [E=Cache-Control:no-cache]

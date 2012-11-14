@@ -1,9 +1,0 @@
-DirectoryIndex erreeme.html index.php index.htm index.html
-Options +All -Indexes
-
-RewriteEngine on
-
-# excluding certain URLs
-RewriteCond &#37;{REQUEST_URI} !/(login|register|usercp|private|profile|cron|image) \.php$?
-# no-cache for php pages only
-RewriteRule (.*\.php)?$ – [E=Cache-Control:no-cache]

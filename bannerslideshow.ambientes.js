@@ -6,11 +6,7 @@ $(document).ready(
 		"{PATH}",
 		<!-- END BLOCK_SLIDES -->
 		];
-		
-		//"img/ambientes/TapeteVI.jpg",
-		//"img/ambientes/TapeteVII.jpg",
-		//"img/ambientes/TapeteVIII.jpg"
-		
+
 		var i=0;
 		// Define the time interval between slide change - miliseconds
 		var timeInterval = 15000;
@@ -29,7 +25,6 @@ $(document).ready(
 		
 		if(bannerslideshow['{ID}'].length > 1) {	
 			timer = window.setInterval(next,timeInterval);
-			//clearInterval(timer);
 		}
 		
 		$("#next_right").click(
@@ -82,7 +77,6 @@ $(document).ready(
 
 	function initslideshow(sel,slideshow,pos){
 		url = slideshow[pos];
-		//console.log(typeof(sel)+' - '+sel+'\' - '+url);
 		$("#bannerslideshow").attr('len',slideshow.length);
 		elem = document.getElementById(sel);
 		if(elem) {
@@ -92,7 +86,6 @@ $(document).ready(
 	}
 
 	function nextbanner(slideshow,pos) {
-		//console.log('--> ',pos);
 		$("#bannerslideshow").hide();
 		$("#bannerslideshow").attr('src',slideshow[pos]);
 
@@ -100,8 +93,5 @@ $(document).ready(
 		$("#bannerslideshow").fadeIn(2000);
 	}
 	function next() {
-		//console.log('pos: ',$('#bannerslideshow').attr('pos'));
-		//console.log('len: ',$('#bannerslideshow').attr('len'));
 		$("#bannerslideshow").fadeOut(2000,function(){$("#next_right").trigger('click')});
-		//$("#next_right").trigger('click');
 	}
