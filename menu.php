@@ -1,13 +1,17 @@
 <?php
 function loadmenu($lang) {
-	$menu = array();
+    require_once("dbconfig.php");
 
-	$row = array(
-		"option"=>"",
-		"text"=>""
-	);
+    $menu = array();
+
+    $row = array(
+        "option"=>"",
+        "text"=>""
+    );
 	
-	$mysqli = new mysqli('localhost','factorin_erreeme','#erreeme!','factorin_erreeme');
+  $dbConfig = getDbConfig("erreeme");
+  
+  $mysqli = new mysqli($dbConfig["url"],$dbConfig["username"],$dbConfig["pwd"],$dbConfig["dbname"]);
 	if ($mysqli->connect_errno) {
 		echo "Failed to connect to MySQL: " . $mysqli->connect_error;
 	}
