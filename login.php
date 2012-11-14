@@ -32,7 +32,7 @@ session_start();
 	<!-- Google Chrome Applications TAB Specific                                          -->
 	<!-- This group of meta-tags defines the way shortcuts for the URL are Named          -->
 	<meta name="application-name" content="ERRE & EME">
-	<meta name="description" content="Custom Rugs">
+	<meta name="description" content="Criação, fabrico e comercialização, nacional e internacional, de tapetes artesanais, a Erreeme Tapeçarias foi criada em 1988.">
 	<link rel="icon" href="img/logos/erreeme32x32.png" sizes="32x32">
 	<!-- application-url defines the URL that is opened when the link/shortcut is pressed -->
 	<!-- <meta name="application-url" content="http://www.erreeme.com.pt"/>               -->
@@ -57,6 +57,7 @@ session_start();
 <body>
 <div class="mainframe"> <!-- BEGIN class="main>" -->
 	<div class="center main">
+        <h1>Erreeme, Custom Rugs</h1>        
 		<div class="centerbody">
 			<div class="languageselect">
 				<img class="logo" alt="logotipo erreeme" src="img/logos/rm_logo_neg_escuro.png"/>
