@@ -1,3 +1,9 @@
+<?php
+//session_set_cookie_params(time()+600);
+session_id('editmodeid');
+session_start();
+
+?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="pt-PT">
 <head>
@@ -13,12 +19,16 @@
 	<!-- media="all,print,handheld"                                                      -->
 	<link rel="stylesheet" type="text/css" media="all" href="erreeme.css">
 	<link rel="stylesheet" type="text/css" media="all" href="menu.css">
-  {INCLUDECSS}
+    <?php
+        if($_SESSION[edit]=="true") {
+            echo '<link rel="stylesheet" type="text/css" media="all" href="editmode.css">';
+        }
+    ?>
 	<!-- IMPORT JAVASCRIPT																 -->
 	<script src="jquery-1.7.1.min.js"></script>
 	<!-- <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script> -->
-	<script type="text/javascript" src="menu.js"></script>
-    <script type="text/javascript" src="editmode.js"></script>
+	<script src="menu.js"></script>
+	<script src="editmode.js"></script>
 	<!-- Google Chrome Applications TAB Specific                                          -->
 	<!-- This group of meta-tags defines the way shortcuts for the URL are Named          -->
 	<meta name="application-name" content="ERRE & EME">
@@ -45,58 +55,32 @@
   
 </head>
 <body>
-<div class="mainframe" lang="{LANGUAGE}"> <!-- BEGIN class="main>" -->
-	<div class="center parcerias">
-		<div class="header">
-			<div class="logo">
-			</div>
-			<div class="menu">
-                <ul> 
-                    <li id="opthome"> <a>{LINGUA}</a>
-                    </li>
-                    <li id="optempresa"> <a>{EMPRESA}</a>
-                    </li>
-                    <li id="optcoleccao"> <a>{COLECCAO}</a>
-                    </li>
-                    <li id="optnovidades"> <a>{NOVIDADES}</a>
-                    </li>        
-                    <li id="optambientes"> <a>{AMBIENTES}</a>
-                    </li>
-                    <li id="optcontactos"> <a>{CONTACTOS}</a>
-                    </li>
-                    <li id="optparcerias"> <a class="selected">{PARCERIAS}</a>
-                    </li>
-                </ul>
-                <div>
-                <ul class="admin">
-                    <li id="logout"><a>logout</a>
-                    </li>
-                </ul>
-                </div>                
-			</div>
-		</div>
+<div class="mainframe"> <!-- BEGIN class="main>" -->
+	<div class="center main">
 		<div class="centerbody">
-            <div class="topblock">
-				<div {AUTOKEY} class="textblock {EDITMODE}">
-                {EDITMODELINK}        
-                {TOPBLOCKTEXTBLOCK}
+			<div class="languageselect">
+				<img class="logo" alt="logotipo erreeme" src="img/logos/rm_logo_neg_escuro.png"/>
+				<div class="lista">
+                    <?php
+                        echo 'editMode() = '.$_SESSION['edit'];
+                    ?>
+                    <form name="login">
+                        user: <input id="user" name="user" type="text" value=""/> <br/>
+                        pwd:<input id="pwd" name="pwd" type="password" value=""/> <br/>
+                        <a id="login">login</a>
+                        <div class="chgpwd">
+                            new:<input id="npwd1" name="pwd" type="password" value=""/> <br/>
+                            repita a nova pwd <br>
+                            new:<input id="npwd2" name="pwd" type="password" value=""/> <br/>
+                            <a id="newpwd">mudar pwd</a>                            
+                            <br>
+                            <a id="logout">logout</a>                            
+                        </div>
+                    </form>
 				</div>
-            <div class="texteditor">
-            <!-- Inserir aqui o form para actualização do texto e um botão para preview -->
-             <form id="edittext" name="newtextForm">
-                 <div class="edittextWrapper">
-                    <textarea {PREVIEWAUTOKEY} id="newtext" name="newtext" style="width:930px;height: 60px">
-                    {PREVIEWTOPBLOCKTEXTBLOCK}                  
-                    </textarea>
-                    <input class="editRightsidetextblock" pageid="parcerias" type="button" value="preview"/>
-                    <input class="editRightsidetextblock" pageid="parcerias" type="button" value="reset"/>
-                    <input class="editRightsidetextblock" pageid="parcerias" type="button" value="cancel"/>
-                 </div>
-             </form>
-            </div>                  
-            <img src="img/worldmap.png"/>
 			</div>
 		</div>
 	</div>
+</div>
 </body>
 </html>

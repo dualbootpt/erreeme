@@ -57,8 +57,9 @@ background-image: none;
  width: 1024px;
 }
 .coleccao .rightside2 {
+display: none;
  width: 700px;
- display: inline-block;
+ //display: inline-block;
 }
 .ambientes .leftside  {
  width: 80px;
@@ -85,7 +86,6 @@ background-image: none;
  font-size: .9em;
 }
 .parcerias .textblock {
- margin-top: 100px;
  margin-left: 100px;
  color: lightgray;
  text-align: justify;
@@ -93,18 +93,17 @@ background-image: none;
 }
 .coleccao .textblock {
  width: 995px;
- //margin-top: 50px;
  color: lightgray;
  text-align: center;
  font-family: 'century gothic';
 }
 .coleccao .qualidades {
- width: 820px;
+ width: 830px;
  margin-top: 60px;
  margin-left: auto;
  margin-right: auto;
 }
-.coleccao .qualidades img {
+.qualidadesImg {
  width: 200px;
  cursor: pointer;
  margin-bottom: 50px;
@@ -259,4 +258,10 @@ erreeme {
  font-family: 'century gothic';
  font-size: .9em;
  text-align: center;
+}
+.texteditor {
+ display: none;
+}
+.admin, .chgpwd {
+    display: none;
 }

@@ -5,6 +5,7 @@ $(document).ready(
 		bannerslideshow['{QUALIDADES}'] = [{BANNERS}];
 		<!-- END BLOCK_BANNERSLIDESHOW -->
 		
+        var editmode={EDITMODE};
 		var i=0;
 		var quali = "";
 		// Define the time interval between slide change - miliseconds
@@ -51,27 +52,33 @@ $(document).ready(
 		)
 		$(".coleccao .qualidades img, .coleccao .leftside img").click(
 			function(){
-				quali = $(this).attr('bannerslide');
-				mostraColeccao(quali,bannerslideshow,15000);
+                quali = $(this).attr('bannerslide');
+                if(quali=="edit"){
+                    editmode = true;
+                 } else {
+                    mostraColeccao(editmode,quali,bannerslideshow,15000);
+                    }
 			}
 		)		
 	}
 )
 
 	function initslideshow(sel,slideshow,pos){
-		url = slideshow[pos];
 		$("#bannerslideshow").attr('len',slideshow.length);
 		elem = document.getElementById(sel);
 		if(elem) {
-			elem.src=url;
+			elem.setAttribute("src",slideshow[pos].src);
+            elem.setAttribute("key",slideshow[pos].key);
 		}
-		return(url);
 	}
 	function nextbanner(slideshow,pos) {
-		$("#bannerslideshow").hide();
-		$("#bannerslideshow").attr('src',slideshow[pos]);
-		$("#bannerslideshow").attr('pos',pos);
-		$("#bannerslideshow").fadeIn(2000);
+        if(slideshow.length > 1){
+            $("#bannerslideshow").hide();
+            $("#bannerslideshow").attr('src',slideshow[pos].src);
+            $("#bannerslideshow").attr('key',slideshow[pos].key);
+            $("#bannerslideshow").attr('pos',pos);
+            $("#bannerslideshow").fadeIn(2000);
+        }
 	}
 	function next() {
 		$("#bannerslideshow").fadeOut(2000,function(){$("#next_right").trigger('click')});
@@ -80,18 +87,22 @@ $(document).ready(
 		var dist = ($(".Vbanner").offset()).left + $(".Vbanner").width()/2;
 		$(".leftside #down, .leftside #up").css('left',dist);
 	}
-	function mostraColeccao(quali,slideshow,timeInterval){
+	function mostraColeccao(editmode,quali,slideshow,timeInterval){
 		if(quali) {
 			$(".coleccao .textblock").hide();
 			$(".coleccao .qualidades").hide();
 			$(".coleccao .rightside").hide();
 			$(".coleccao .leftside").css('display','inline-block');
+            $(".coleccao .rightside2").css('display','inline-block');
 			$(".coleccao .bannerswindow").css('display','inline-block');
 			$(".coleccao .leftside img").css('opacity','1');
 			$(".coleccao .Vbanner img").filter(function(index){return $(this).attr("bannerslide")==quali;}).css('opacity','.5');
 			positionVbannerButtons();
-			initslideshow("bannerslideshow",slideshow[quali],0);
-			if(slideshow[quali].length > 1 && timeInterval != 0) {
+            $('#bannerslideshow').attr('bannerslide',quali);
+            if(slideshow[quali].length > 0){
+                initslideshow("bannerslideshow",slideshow[quali],0);
+            }
+			if(!editmode && slideshow[quali].length > 1 && timeInterval != 0) {
 				timer = window.setInterval(next,timeInterval);
 			}			
 		}

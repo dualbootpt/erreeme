@@ -11,13 +11,14 @@
 	<link rel="shortcut icon" href="img/logos/erreeme.ico" type="image/x-icon">
 	<!-- IMPORT STYLESHEETS																 -->
 	<!-- media="all,print,handheld"                                                      -->
-	<link rel="stylesheet" type="text/css" media="all" href="erreeme.css">
-	<link rel="stylesheet" type="text/css" media="all" href="menu.css">
+	<link rel="stylesheet" type="text/css" media="all" href="erreeme.css"/>
+	<link rel="stylesheet" type="text/css" media="all" href="menu.css"/>
+  {INCLUDECSS}
 	<!-- IMPORT JAVASCRIPT																 -->
 	<script src="jquery-1.7.1.min.js"></script>
 	<!-- <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script> -->
-	<script src="menu.js"></script>
-	<script src="bannerslideshow.js"></script>
+	<script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="editmode.js"></script>
 	<!-- Google Chrome Applications TAB Specific                                          -->
 	<!-- This group of meta-tags defines the way shortcuts for the URL are Named          -->
 	<meta name="application-name" content="RM Custom Rugs">
@@ -48,41 +49,58 @@
 	<div class="center empresa">
 		<div class="header">
 			<div class="logo">
-				<!-- <img alt="logotipo erreeme" src="img/logos/logotipo_erreeme_transparente_main.png"> -->
 			</div>
 			<div class="menu">
-				   <ul> 
-						<li id="opthome"> <a>{LINGUA}</a>
-						</li>
-						<li id="optempresa"> <a class="selected">{EMPRESA}</a>
-						</li>
-						<li id="optcoleccao"> <a>{COLECCAO}</a>
-						</li>
-            <li id="optnovidades"> <a>{NOVIDADES}</a>
-						</li>             
-						<li id="optambientes"> <a>{AMBIENTES}</a>
-						</li>
-						<li id="optcontactos"> <a>{CONTACTOS}</a>
-						</li>
-						<li id="optparcerias"> <a>{PARCERIAS}</a>
-						</li>
-					</ul>
+            <ul> 
+                <li id="opthome"> <a>{LINGUA}</a>
+                </li>
+                <li id="optempresa"> <a class="selected">{EMPRESA}</a>
+                </li>
+                <li id="optcoleccao"> <a>{COLECCAO}</a>
+                </li>
+                <li id="optnovidades"> <a>{NOVIDADES}</a>
+                </li>             
+                <li id="optambientes"> <a>{AMBIENTES}</a>
+                </li>
+                <li id="optcontactos"> <a>{CONTACTOS}</a>
+                </li>
+                <li id="optparcerias"> <a>{PARCERIAS}</a>
+                </li>
+            </ul>
+            <div>
+            <ul class="admin">
+                <li id="logout"><a>logout</a>
+                </li>
+            </ul>
+            </div>                
 			</div>
 		</div>
 		<div class="centerbody">
 			<div class="topblock">
 				<div class="leftside">
 					<object width="480" height="360">
-						<param name="movie" value="http://www.youtube-nocookie.com/v/DzVYbvAsjNs?version=3&amp&hl=pt_PT&rel=0&autoplay=1&showinfo=0&autohide=1&controls=0"></param>
+						<param name="movie" value="http://www.youtube-nocookie.com/v/DzVYbvAsjNs?version=3&amp&hl=pt_PT&rel=0&autoplay=0&showinfo=0&autohide=1&controls=0"></param>
 						<param name="allowFullScreen" value="true"></param>
 						<param name="allowscriptaccess" value="always"></param>
-						<embed src="http://www.youtube-nocookie.com/v/DzVYbvAsjNs?version=3&amp&hl=pt_PT&rel=0&autoplay=1&showinfo=0&autohide=1&controls=0" type="application/x-shockwave-flash" width="480" height="360" allowscriptaccess="always" allowfullscreen="true">						</embed>
+						<embed src="http://www.youtube-nocookie.com/v/DzVYbvAsjNs?version=3&amp&hl=pt_PT&rel=0&autoplay=0&showinfo=0&autohide=1&controls=0" type="application/x-shockwave-flash" width="480" height="360" allowscriptaccess="always" allowfullscreen="true">						</embed>
 					</object>
 				</div>
 				<div class="rightside">
-					<div class="textblock">
-						{RIGHTSIDETEXTBLOCK}
+					<div {AUTOKEY} class="textblock {EDITMODE}">
+                        {EDITMODELINK}
+                        {RIGHTSIDETEXTBLOCK}
 					</div>
+                <div class="texteditor">
+                    <!-- Inserir aqui o form para actualização do texto e um botão para preview -->
+                    <form name="newtextForm">
+                        <textarea {PREVIEWAUTOKEY} id="newtext" name="newtext" style="width:500px;height: 360px">
+                        {PREVIEWRIGHTSIDETEXTBLOCK}                  
+                        </textarea>
+                        <input class="editRightsidetextblock" pageid="empresa" type="button" value="preview"/>
+                        <input class="editRightsidetextblock" pageid="empresa" type="button" value="reset"/>
+                        <input class="editRightsidetextblock" pageid="empresa" type="button" value="cancel"/>
+                    </form>
+                </div>
 				</div>
 			</div>
 		</div>

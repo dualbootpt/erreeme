@@ -39,7 +39,6 @@
 		
 		// Headers adicionais obrigatóriamente separados por \r\n
 		mail($to,$subject,implode("\n",$message),implode("\r\n",$headers));
-		//echo "Mail Sent.";
 	?>
 	<div class="confirmacao">
 		<?php

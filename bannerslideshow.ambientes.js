@@ -3,10 +3,11 @@ $(document).ready(
 		var bannerslideshow = new Array();
 		bannerslideshow['{ID}']=[
 		<!-- BEGIN BLOCK_SLIDES -->
-		"{PATH}",
+		{src:"{PATH}", key:"{DBKEY}"},
 		<!-- END BLOCK_SLIDES -->
 		];
 
+        var editmode = {EDITMODE};
 		var i=0;
 		// Define the time interval between slide change - miliseconds
 		var timeInterval = 15000;
@@ -23,7 +24,7 @@ $(document).ready(
 		$(".arrows").css({'margin-top':midpoint});	
 		$("#next_right").css('margin-left',rightArrowPos);
 		
-		if(bannerslideshow['{ID}'].length > 1) {	
+		if(!editmode && bannerslideshow['{ID}'].length > 1) {	
 			timer = window.setInterval(next,timeInterval);
 		}
 		
@@ -76,21 +77,22 @@ $(document).ready(
 )
 
 	function initslideshow(sel,slideshow,pos){
-		url = slideshow[pos];
 		$("#bannerslideshow").attr('len',slideshow.length);
 		elem = document.getElementById(sel);
 		if(elem) {
-			elem.src=url;
+			elem.setAttribute("src",slideshow[pos].src);
+            elem.setAttribute("key",slideshow[pos].key);
 		}
-		return(url);
 	}
 
 	function nextbanner(slideshow,pos) {
-		$("#bannerslideshow").hide();
-		$("#bannerslideshow").attr('src',slideshow[pos]);
-
-		$("#bannerslideshow").attr('pos',pos);
-		$("#bannerslideshow").fadeIn(2000);
+        if(slideshow.length > 1){
+            $("#bannerslideshow").hide();
+            $("#bannerslideshow").attr('src',slideshow[pos].src);
+            $("#bannerslideshow").attr('key',slideshow[pos].key);
+            $("#bannerslideshow").attr('pos',pos);
+            $("#bannerslideshow").fadeIn(2000);
+        }
 	}
 	function next() {
 		$("#bannerslideshow").fadeOut(2000,function(){$("#next_right").trigger('click')});

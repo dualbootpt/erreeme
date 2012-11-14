@@ -14,11 +14,13 @@
 	<link rel="stylesheet" type="text/css" media="all" href="erreeme.css">
 	<link rel="stylesheet" type="text/css" media="all" href="menu.css">
 	<link rel="stylesheet" type="text/css" media="all" href="bannerslideshow.css">
+  {INCLUDECSS}
 	<!-- IMPORT JAVASCRIPT																 -->
 	<script src="jquery-1.7.1.min.js"></script>
 	<!-- <script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script> -->
 	<script src="menu.js"></script>
 	<script src="bannerslideshow.ambientes.js.php"></script>
+    <script type="text/javascript" src="editmode.js"></script>
 	<!-- Google Chrome Applications TAB Specific                                          -->
 	<!-- This group of meta-tags defines the way shortcuts for the URL are Named          -->
 	<meta name="application-name" content="RM Custom Rugs">
@@ -52,22 +54,28 @@
 				<!-- <img alt="logotipo erreeme" src="img/logotipo.png"> -->
 			</div>
 			<div class="menu">
-				   <ul> 
-						<li id="opthome"> <a>{LINGUA}</a>
-						</li>
-						<li id="optempresa"> <a>{EMPRESA}</a>
-						</li>
-						<li id="optcoleccao"> <a>{COLECCAO}</a>
-						</li>
-            <li id="optnovidades"> <a>{NOVIDADES}</a>
-						</li> 
-						<li id="optambientes"> <a class="selected">{AMBIENTES}</a>
-						</li>
-						<li id="optcontactos"> <a>{CONTACTOS}</a>
-						</li>
-						<li id="optparcerias"> <a>{PARCERIAS}</a>
-						</li>
-					</ul>
+                <ul> 
+                    <li id="opthome"> <a>{LINGUA}</a>
+                    </li>
+                    <li id="optempresa"> <a>{EMPRESA}</a>
+                    </li>
+                    <li id="optcoleccao"> <a>{COLECCAO}</a>
+                    </li>
+                    <li id="optnovidades"> <a>{NOVIDADES}</a>
+                    </li> 
+                    <li id="optambientes"> <a class="selected">{AMBIENTES}</a>
+                    </li>
+                    <li id="optcontactos"> <a>{CONTACTOS}</a>
+                    </li>
+                    <li id="optparcerias"> <a>{PARCERIAS}</a>
+                    </li>
+                </ul>
+                <div>
+                <ul class="admin">
+                    <li id="logout"><a>logout</a>
+                    </li>
+                </ul>
+                </div>                
 			</div>
 			<div id="selzoom">
 				ZOOM
@@ -76,13 +84,30 @@
 		<div class="centerbody">
 			<div class="topblock">
 				<div class="rightside">
-					<div class="textblock">
+					<div {AUTOKEY} class="textblock {EDITMODE}">
+                        {EDITMODELINK}          
 						{RIGHTSIDETEXTBLOCK}
 					</div>
+                    <div class="texteditor">
+                        <!-- Inserir aqui o form para actualização do texto e um botão para preview -->
+                        <form id="edittext" name="newtextForm">
+                            <div>
+                                <textarea {PREVIEWAUTOKEY} id="newtext" name="newtext" style="width:930px;height:60px">
+                                {PREVIEWRIGHTSIDETEXTBLOCK}                  
+                                </textarea>
+                                <input class="editRightsidetextblock" pageid="ambientes" type="button" value="preview"/>
+                                <input class="editRightsidetextblock" pageid="ambientes" type="button" value="reset"/>
+                                <input class="editRightsidetextblock" pageid="ambientes" type="button" value="cancel"/>
+                            </div>
+                        </form>
+                    </div>                    
 					<div class="bannerswindow">
+                        {BANNEREDITLINK} 
 						<div id="next_left" class="arrows"></div>
 						<div id="next_right" class="arrows"></div>	
-						<img pos=0 id="bannerslideshow">
+						<img pos=0 id="bannerslideshow" bannerslide="ambientes">
+                        <img dir="ambientes" pageid="ambientes" id="insertSlide"/>
+                        <img pageid="ambientes" id="removeSlide"/>                        
 					</div>
 				</div>
 			</div>
@@ -92,5 +117,7 @@
 			</div>
 		</div>
 	</div>
+    <div pageid="ambientes" id="slideSelector">
+    </div>
 </body>
 </html>

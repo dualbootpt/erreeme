@@ -1,0 +1,94 @@
+div.textblock.editmode {
+  border: dashed;
+}
+div.registo.editmode {
+  border: dashed;
+}
+.editmode a {
+  color: red;
+  cursor: pointer;
+}
+#insertSlide {
+    background:url(img/insert_remove.png) 0px -5px;
+    position:relative;
+    top: -560px;
+    margin-left:10px;
+    width:60px;
+    height:15px
+}
+#removeSlide {
+    background:url(img/insert_remove.png) 0px 25px;
+    position:relative;
+    top: -560px;
+    margin-left:10px;
+    width:60px;
+    height:15px
+}
+#imageSelList {
+    background:lightgray;
+    width:600px;
+    height:200px;
+    overflow-y:scroll;       
+}
+.imageListItem {
+    background:darkgray;width:60px;
+    height:30px;
+    padding:5px
+}
+#slideSelector {
+    max-width: 230px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+#imageSelector {
+    max-width: 230px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+.selectorBox {
+    border: solid 2px white;
+    max-width: 230px;
+    float: right;
+    background-color: #121316;
+    position: absolute;
+    right: 20px;    
+}
+#newtext {
+    color: lightgray;
+    text-align: justify;
+    white-space: normal;
+    font-family: 'century gothic';
+    font-size: .9em;
+    background-color: #121316;
+    display: block;
+}
+.edittextWrapper {
+    margin-left: 80px;
+}
+.editRightsidetextblock {
+    cursor: pointer;
+}
+.removeColeccaoOpt {    
+    background-image:url(img/insert_remove.png);
+    background-position:0px 25px;
+    z-index:100;
+    position: relative;
+    width: 60px;
+    height: 15px;
+    left: -80px;
+    top: -130px;
+}
+.admin {
+    display: block;
+    margin-top: 25px;
+    float: right;
+}
+.admin a {
+    color: red;
+}
+#login {
+    display: none;
+}
+.chgpwd {
+    display: block;
+}

@@ -1,23 +1,4 @@
 <?php
-	require("Template.class.php");
-	require("conteudo.php");
-
-	$tpl = new Template("bannerslideshow.coleccao.js");
-	//$slideshow = getslideshow("ambientes");
-	$coleccao = getcoleccao('qualidades');
-	
-	foreach($coleccao as $elem => $row) {
-		$bannerslideshow = getslideshow($row['bannerslideshow']);
-		//$tpl->BANNERS = "'img/coleccao/Chic_compo_72.jpg','img/coleccao/Mood mix_compo_72.jpg'";
-		$banners = "";
-		foreach($bannerslideshow as $path) {
-			$banners = $banners."'".$path."',";
-		}
-		$tpl->BANNERS = $banners;
-		$tpl->QUALIDADES = $elem;
-		$tpl->block("BLOCK_BANNERSLIDESHOW");
-	}	
-	
 	// javascript header
 	header('Content-type: text/javascript');
 	// Date in the past
@@ -28,5 +9,29 @@
 	header('Cache-Control: no-store, no-cache, must-revalidate');
 	header('Cache-Control: post-check=0, pre-check=0', false);
 	
+	//require("Template.class.php");
+    require_once("utils.php");
+	require_once("conteudo.php");
+    
+	$tpl = new Template("bannerslideshow.coleccao.js");
+	$coleccao = getcoleccao('coleccao');
+	
+    if(editMode()){
+        $tpl->EDITMODE = 'true';
+    } else {
+        $tpl->EDITMODE = 'false';
+    }    
+    
+	foreach($coleccao as $elem => $row) {
+		$bannerslideshow = getslideshow($row['bannerslideshow']);
+		$banners = "";
+		foreach($bannerslideshow as $slide) {
+			$banners = $banners."{src:'".$slide['path']."', key:'".$slide['autoid']."'},";      
+		}
+		$tpl->BANNERS = $banners;
+		$tpl->QUALIDADES = $row['bannerslideshow'];
+		$tpl->block("BLOCK_BANNERSLIDESHOW");
+	}	
+
 	$tpl->show();
 ?>

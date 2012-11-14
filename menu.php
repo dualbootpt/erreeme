@@ -26,7 +26,6 @@ function loadmenu($lang) {
 				}
 	$qrystringmenu->execute();
 	$qrystringmenu->store_result();
-	//echo $qrystringmenu->num_rows;
 	
 	if($qrystringmenu->num_rows) {
 		while( $qrystringmenu->fetch() ) {
