@@ -12,14 +12,14 @@
 			display: inline-block;
 		}
 		.ambientes .bannerswindow {
-			width: 940px;
+			width: 1024px;
 			height: 570px;
 			overflow: hidden; /* Esconde o resto do objectos. Comentar para ver o efeito. */
 			margin-bottom: 4px;
 			margin-top: 20px;
 		}
 		.ambientes .bannerswindow img {
-			width: 940px;
+			width: 1024px;
 			height: 570px;		
 			display: inline-block;
 		}		
